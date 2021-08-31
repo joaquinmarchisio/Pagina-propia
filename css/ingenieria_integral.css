@@ -1,0 +1,342 @@
+/* font-family: 'Cabin', sans-serif; */
+
+/* font-family: 'Cabin', sans-serif;
+font-family: 'Montserrat Alternates', sans-serif; */
+
+/* font-family: 'Cabin', sans-serif;
+font-family: 'Montserrat Alternates', sans-serif;
+font-family: 'Saira Semi Condensed', sans-serif; */
+
+body{
+    font-family: 'Cabin', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+header{
+    background-color: #b94611;
+    /* padding: 1em 0; */
+}
+
+/* Inicio Home */
+header h1{
+    color: whitesmoke;
+    font-size: 2.5em;
+    font-style: italic;
+    font-weight: 100;
+    display: inline-block;
+    position: relative;
+    
+}
+header h3{
+    color: whitesmoke;
+    display: inline-block;
+    float: right;
+    margin-right: 20px;
+    margin-top: 40px;
+    font-family: 'Saira Semi Condensed', sans-serif;
+    font-size: 1.5em;
+ }
+
+.homeimg img{
+    display: inline-block;
+    width: 100%;
+    border: 1px solid black;
+    box-sizing: border-box;
+ }
+
+ /* Doy estilo al nav. */
+nav{
+     background-color: #b86e4c;
+     margin-bottom: 2em;
+ }
+
+  /* Doy estilo a los elementos dentro del nav por separado. */
+nav ul{
+    list-style: none; /*Para sacar los puntitos de la lista (viñetas).*/
+    margin: 0; /*Saco el margin y padding que trae por defecto.*/
+    padding: 0; 
+  }
+
+nav ul li{
+    display: inline-block; /*Ubico el navegador en línea horizontal.*/
+    width: 19.75%;
+    }
+/* Pongo estilo a los elementos y apunto a la "a".  */
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    padding: 0.2em 0.4em;
+}
+
+/* Defino la pseudoclase para cuando pase el puntero por el nav. */
+nav ul li a:hover{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Pie de página */
+footer{
+    background-color: #ccc;
+    clear: both; /*Ver que es???*/
+    color: #333;
+    padding: 2em 0;
+    margin-top: 1.2em;
+    text-align: center; 
+    font-size: 1.2em;
+}
+
+/* Llamo a la clase que creé dentro de nav.*/
+nav ul li a.activo{ /*Dejo activo el home para que lo deje pintado. */
+    background-color: #e04507;
+}
+
+/* Esto lo hago para centrar la barra del nav. */
+.holder{
+    max-width: 1280px;
+    margin: 0 auto;
+    font-size: 1.2em;
+    /* background-color: red; Una buena práctica es poner un background de un color llamativo para identificar más fácil como van quedando las cajitas armadas.*/
+}
+
+.bienvenidos h2{
+    color: #9e2f03;
+    font-family: 'Saira Semi Condensed', sans-serif; 
+    font-size: 2em;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.bienvenidos p{
+    font-size: 1.2em;
+    font-family: 'Montserrat Alternates', sans-serif;
+    padding-left: 5em;
+    padding-right: 5em;
+    line-height: 1.5em; /*Interlineado*/
+    text-align: justify;
+}
+
+.bienvenidos ul{
+    padding-left: 10em;
+    padding-right: 10em;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 1.2em;
+    line-height: 1.5em; /*Interlineado*/
+    text-align: justify;
+}
+
+.imagenes .item{
+    display: inline-block;
+    width: 20%;
+    height: auto;
+    float: left; /*Marca error porque no haría falta definirlo, ya que definí el display:inline-block*/
+    margin: 1em 0 1em 2.5%;
+    border: 1px solid #ddd;
+    padding: 0.3em;
+    box-sizing: border-box;
+    text-align: center
+}
+
+.imagenes .item img{
+    width: 100%;
+    display: block;
+}
+
+.imagenes h3{
+    color: #9e2f03;
+    font-family: 'Saira Semi Condensed', sans-serif; 
+    font-size: 1.5em;
+}
+
+.botones{
+    display: flex;
+    margin-top: 25%;
+    justify-content: center;
+    
+}
+
+/* Cambio color de botones de bootstrap. (Información extraída de internet). */
+.btn-primary {
+    color: #212529;
+    background-color: #9e2f03;
+    border-color: #9e2f03;
+    border: 1px solid black;
+}
+/* Inicio Home */
+
+/* Inicio Nosotros */
+.nosotros h2{
+    color: #9e2f03;
+    font-family: 'Saira Semi Condensed', sans-serif; 
+    font-size: 2em;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.nosotros p{
+    font-size: 1.2em;
+    font-family: 'Montserrat Alternates', sans-serif;
+    padding-left: 5em;
+    padding-right: 5em;
+    line-height: 1.5em; /*Interlineado*/
+    text-align: justify;
+}
+
+.mis-vis-val{
+    border:1px solid gray;
+    border-radius: 0.7em;
+    margin: 1em 0;
+    padding: 1em;
+    overflow: hidden;
+    
+}
+
+.mis-vis-val .info{
+    width: 75%;
+}
+
+.mis-vis-val .info h4{
+    color: #9e2f03;
+    font-size: 1.2em;
+    font-style: italic;
+    font-weight: 500;
+    margin: 0 0 1em;
+    border-bottom: 1px solid #9e2f03 ;
+    padding-bottom: 0.5em;
+}
+
+.mis-vis-val .info p{
+    font-size: 0.8em;
+    line-height: 1.2em;
+}
+
+.mis-vis-vals .img{
+    border-radius: 0.8em;
+}
+
+/* Pseudoclase para poner reglas a los pares. (Tener en cuenta que se empieza a contabilizar desde cero). */
+.mis-vis-val:nth-child(even) img{
+    float: right;
+    margin: 0 0 0 1em;
+    width: 7%;
+}
+
+.mis-vis-val:nth-child(even) .info{
+    float: left;
+    
+}
+/* Pseudoclase para poner reglas a los impares. (Tener en cuenta que se empieza a contabilizar desde cero). */
+.mis-vis-val:nth-child(odd) img{
+    float: left;
+    margin: 0 1em 0 0;
+    width: 7%;
+}
+
+.mis-vis-val:nth-child(odd) .info{
+    float: right;
+    
+}
+
+.personas{
+    overflow: hidden;
+    
+}
+
+.persona{
+    width: 18%;
+    border: 1px solid gray;
+    border-radius: 0.25em;
+    float: left;
+    margin-left: 2.25%;
+    box-sizing: border-box;
+    margin-left: 150px;
+    
+}
+
+.persona{
+    text-align: center;
+}
+
+.persona img{
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    margin: 0.8em 0 1em;
+    max-width: 75%;
+    
+}
+
+/* Hay estilos que ambas h comparten, por eso las hago juntas. */
+.persona h5, .persona h6{
+    text-align: center;
+    font-weight: normal;
+    color: #9e2f03;
+    margin:0;
+}
+
+.persona h5{
+    font-size: 0.9em;
+}
+
+.persona h6{
+    font-size: 0.8em;
+    font-style: italic;
+}
+/* Fin Nosotros */
+
+/* Inicio Servicios */
+.servicios{
+    border:1px solid gray;
+    border-radius: 0.7em;
+    margin: 1em 0;
+    padding: 1em;
+    overflow: hidden;
+    
+}
+
+.serv h2{
+    color: #9e2f03;
+    font-family: 'Saira Semi Condensed', sans-serif; 
+    font-size: 2em;
+    text-align: center;
+    font-weight: bolder;
+
+}
+.servicios h4{
+    color: #9e2f03;
+    font-family: 'Saira Semi Condensed', sans-serif; 
+    font-size: 1.3em;
+}
+.servicios p{
+    font-size: 1.1em;
+    font-family: 'Saira Semi Condensed', sans-serif;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    line-height: 1.5em; /*Interlineado*/
+    text-align: justify;
+}
+
+
+/* Pseudoclase para poner reglas a los pares. (Tener en cuenta que se empieza a contabilizar desde cero). */
+.servicios:nth-child(even) img{
+    float: right;
+    margin: 0 0 0 1em;
+    width: 20%;
+}
+
+.servicios:nth-child(even) .info{
+    float: left;
+    
+}
+/* Pseudoclase para poner reglas a los impares. (Tener en cuenta que se empieza a contabilizar desde cero). */
+.servicios:nth-child(odd) img{
+    float: left;
+    margin: 0 1em 0 0;
+    width: 20%;
+}
+
+.servicios:nth-child(odd) .info{
+    float: right;
+    
+}
+/* Fin Servicios */
